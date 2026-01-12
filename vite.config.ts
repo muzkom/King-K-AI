@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   define: {
     // This ensures process.env.API_KEY is replaced with the actual value during build
-    'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
+    // Uses fallback to empty string to prevent build/runtime errors if undefined
+    'process.env.API_KEY': JSON.stringify(process.env.API_KEY || ''),
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
   },
   build: {
