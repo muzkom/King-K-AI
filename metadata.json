@@ -1,0 +1,8 @@
+{
+  "name": "King K AI",
+  "description": "Elite Institutional Trade Analyst (v3) - SMC/ICT Deep Scan with 100% Precision.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
